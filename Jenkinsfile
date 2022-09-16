@@ -1,4 +1,4 @@
-import groovy.json.JsonSlurper
+import jenkins.model.*
 
 def getFtpPublishProfile(def publishProfilesJson) {
   def pubProfiles = new JsonSlurper().parseText(publishProfilesJson)
